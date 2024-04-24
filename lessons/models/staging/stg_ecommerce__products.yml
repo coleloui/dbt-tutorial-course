@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: stg_ecommerce__products
+    description: ""
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+
+      - name: cost
+        description: ""
+
+      - name: category
+        description: ""
+
+      - name: name
+        description: ""
+
+      - name: brand
+        description: ""
+
+      - name: retail_price
+        description: ""
+
+      - name: department
+        description: ""
+
+      - name: sku
+        description: ""
+
+      - name: distrubution_center_id
+        description: ""
