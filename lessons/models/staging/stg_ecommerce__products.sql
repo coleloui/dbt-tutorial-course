@@ -8,14 +8,20 @@ WITH source AS (
         ) }}
 )
 SELECT
+    -- ID
     id AS product_id,
-    cost,
-    category,
-    NAME,
+    
+    -- Other
     brand,
-    retail_price,
+    cost,
     department,
+    retail_price,
+    
+    {#  -- Unused
+    NAME,
+    category,
     sku,
     distribution_center_id
-FROM
-    source
+     #}
+
+FROM source
